@@ -1,2 +1,2 @@
-# datascienceIBM
+# Data Science
 Homeworks of courses
