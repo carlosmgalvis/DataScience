@@ -1,0 +1,55 @@
+---
+title: "R Estadistica Descriptiva"
+author: "Carlos Galvis"
+date: "2022-10-29"
+output: html_document
+---
+
+Notebook Rmarkdown para Evaluación analítica descriptiva
+
+
+Los datos para el ejercicio son los siguientes:
+
+```{r}
+datos <- c(66.4,69.2,70.0,71.0,71.9,74.2,67.7,69.3,70.1,71.1,72.1,74.5,68.0,69.3,70.2,71.2,72.2,75.3,68.0,69.5,70.3,71.3,72.3,68.3,69.5,70.3,71.3,72.4,68.4,69.6,70.4,71.5,72.6,68.6,69.7,70.5,71.6,72.7,68.8,69.8,70.6,71.6,72.9,68.9,69.8,70.6,71.7,73.1,69.0,69.9,70.8,71.8,73.3,69.1,70.0,70.9,71.8,73.5
+)
+View(datos)
+```
+
+
+Las estadíticas generadas por comandos para cada función
+
+```{r}
+
+mean(datos)
+sd(datos)
+max(datos,na.rm = FALSE)
+min(datos,na.rm = FALSE)
+
+```
+
+Resumen de las estadísticas con diferentes librerias
+
+```{r}
+
+summary(datos)
+
+library(psych)
+describe(datos)
+
+library(pastecs)
+stat.desc(datos) 
+
+```
+
+Generación del histograma
+
+```{r}
+hist(x= datos)
+```
+
+Generación del diagrama de cajas y bigotes
+
+```{r}
+boxplot(x = datos)
+```
